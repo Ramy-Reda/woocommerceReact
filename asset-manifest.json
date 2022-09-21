@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/woocommerceReact/static/css/main.7090f5a0.css",
+    "main.js": "/woocommerceReact/static/js/main.e1249c51.js",
+    "static/media/home-filler.jpeg": "/woocommerceReact/static/media/home-filler.9d14f63236ac45a8f4ab.jpeg",
+    "static/media/productsBcg.jpeg": "/woocommerceReact/static/media/productsBcg.270abeaa076c7a0b31bc.jpeg",
+    "static/media/bannerBcg.jpeg": "/woocommerceReact/static/media/bannerBcg.7551a5318011eb0ee773.jpeg",
+    "index.html": "/woocommerceReact/index.html",
+    "main.7090f5a0.css.map": "/woocommerceReact/static/css/main.7090f5a0.css.map",
+    "main.e1249c51.js.map": "/woocommerceReact/static/js/main.e1249c51.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7090f5a0.css",
+    "static/js/main.e1249c51.js"
+  ]
+}
