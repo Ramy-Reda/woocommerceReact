@@ -1,0 +1,193 @@
+@import "./variaballs";
+@import "./placeholder";
+
+.back{
+    margin-top: 78px;
+    background: url(../public/Images/pageBcg/productsBcg.jpeg) center center no-repeat fixed;
+    background-size: cover;
+    min-height: 550px;
+    max-width:100%;
+    @extend %flex-center;
+
+    & .center{
+        & p{
+            font : {
+                size: 40px;
+                family: cursive;
+                weight : 700
+            };
+            color: $mainColor;
+            text-align: center;
+        }
+    
+        & span{
+            font : {
+                size: 55px;
+                family: cursive;
+                weight : 500;
+            };
+            color: white;
+            margin-bottom: 40px
+        }
+    }
+}
+
+.side{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 20px;
+
+    & .right{
+        height : fit-content;
+        padding: 30px;
+        // box-shadow: 2px 0px 7px rgb(0 0 0 / 17%);
+        & .under{
+            font: {
+                size : 15px;
+                weight: 500;
+                family: cursive;
+            }
+            color: #131313;
+            position: relative;
+
+            &::after{
+                content : "";position: absolute;
+                bottom: -5px;
+                left: 0;
+                height: 2px;
+                width: 20%;
+                background-color: $mainColor;
+            }
+        }
+
+        & ul{
+            list-style: none;
+
+            & li {
+                transition: all 0.3s;
+                cursor: pointer;
+                &:hover{
+                    color: #555;
+                }
+            }
+        }
+
+        & .rang{
+            font: {
+                size: 16px;
+                weight: 600;
+                family: "Helvetica Neue", Helvetica, Arial,;
+            };
+        }
+
+        & form{
+            position: relative;
+            input{
+                display: block;
+                margin: 10px;
+                font-size: 20px;
+                padding: 5px;
+                width: 80%;
+            }
+            & input[type="text"]{
+                margin-left: 60px;
+            }
+            & i{
+                position: absolute;
+                top: 36px;
+                font-size: 20px;
+                left: 9px;
+                color: #071013;
+                background: #9b9999;
+                width: 52px;
+                height: 37px;
+                line-height: 37px;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+                text-align: center;
+            }
+        }
+
+        & .colors{
+            color: rgb(81, 81, 250);
+            font: {
+                size: 1.1rem;
+            }
+
+            & li{
+                margin-left: 50px;
+                position: relative;
+                margin-top: 8px;
+            }
+
+            & .black{
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -46px;
+                    width: 18px;
+                    height: 18px;
+                    background-color: black;
+                }
+            }
+            & .Red{
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -46px;
+                    width: 18px;
+                    height: 18px;
+                    background-color: red;
+                }
+            }
+            & .Blue{
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -46px;
+                    width: 18px;
+                    height: 18px;
+                    background-color: blue;
+                }
+            }
+            & .Yellow{
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -46px;
+                    width: 18px;
+                    height: 18px;
+                    background-color: yellow;
+                }
+            }
+            & .Green{
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -46px;
+                    width: 18px;
+                    height: 18px;
+                    background-color: green;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width : 1200px){
+    .side{ 
+        grid-template-columns:  1fr;
+    }
+    .side .right{
+        display: none;
+    }
+    .side .left{
+        width: 100%;
+    }
+}

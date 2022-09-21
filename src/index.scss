@@ -1,0 +1,36 @@
+@import "./sass/responsive";
+@import "./sass/nav";
+@import "./sass/home";
+@import "./sass/variaballs";
+@import "./sass/btn";
+@import "./sass/placeholder";
+@import "./sass/product";
+@import "./sass/singleProduct";
+@import "./sass/store";
+@import "./sass/footer";
+
+*{
+    text-transform:capitalize;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight:600;
+}
+
+.txt-white{
+    color: white;
+}
+
+
+
+
+
+

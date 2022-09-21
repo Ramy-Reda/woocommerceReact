@@ -1,1 +1,1 @@
-# woocommerceReact
+# reactWoocommerce

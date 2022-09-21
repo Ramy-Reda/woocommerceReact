@@ -1,0 +1,14 @@
+%flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%flex-around{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+%flex-icons{
+        display: flex;
+        align-items: baseline;
+}
